@@ -27,4 +27,43 @@ public class HomepageController {
 		return mav;
 	}
 
+	
+	@RequestMapping(value="/postad", method=RequestMethod.GET)
+	public ModelAndView postad() {
+		ModelAndView mav = new ModelAndView("post-ad");
+		return mav;
+	}
+	
+	@RequestMapping(value="/categories", method=RequestMethod.GET)
+	public ModelAndView categories() {
+		ModelAndView mav = new ModelAndView("dummy");
+		return mav;
+	}
+	@RequestMapping(value="/dummy", method=RequestMethod.GET)
+	public ModelAndView searchbar() {
+		ModelAndView mav = new ModelAndView("dummy");
+		return mav;
+	}
+	@RequestMapping(value="/termsconditions", method=RequestMethod.GET)
+	public ModelAndView termsconditions() {
+		ModelAndView mav = new ModelAndView("termsconditions");
+		return mav;
+	}
+	@RequestMapping(value="/faqs", method=RequestMethod.GET)
+	public ModelAndView faqs() {
+		ModelAndView mav = new ModelAndView("faqs");
+		return mav;
+	}
+	@RequestMapping(value="/aboutus", method=RequestMethod.GET)
+	public ModelAndView aboutus() {
+		ModelAndView mav = new ModelAndView("aboutus");
+		return mav;
+	}
+	@RequestMapping(value="/contactus", method=RequestMethod.GET)
+	public ModelAndView contactus() {
+		ModelAndView mav = new ModelAndView("contactus");
+		return mav;
+	}
+
+	
 }

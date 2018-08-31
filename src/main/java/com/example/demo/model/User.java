@@ -21,6 +21,11 @@ public class User {
 		this.address = address;
 	}
 	
+	public User() {
+		// TODO Auto-generated constructor stub
+	}
+
+	
 	public String getName() {
 		return name;
 	}

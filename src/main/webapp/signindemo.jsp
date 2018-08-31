@@ -29,5 +29,6 @@
 										<p class="get-pw">Enter your email address below and we'll send you an email with instructions.</p>
 										
 										</form>
+											<jsp:include page="footer.jsp"/>
 </body>
 </html>

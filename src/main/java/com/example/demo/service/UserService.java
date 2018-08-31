@@ -17,8 +17,12 @@ public class UserService {
 		
 	}
 	
-	public User findByFirstName(String name) {
-		return repo.findByName(name);
+	public User findByEmail(String email) {
+		return repo.findByEmail(email);
+	}
+	
+	public User findByPhone(String phone) {
+		return repo.findByPhone(phone);
 	}
 	
 	public User findByNameAndPassword(String name, String password) {

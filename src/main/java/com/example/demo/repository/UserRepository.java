@@ -9,7 +9,8 @@ import com.example.demo.model.User;
 
 @Repository
 public interface UserRepository extends MongoRepository<User, String> {
-	public User findByName(String name);
+	public User findByEmail(String email);
+	public User findByPhone(String phone);
 	public User findByNameAndPassword(String name, String password);
 	public User findByEmailAndPassword(String email, String password);
 	public List<User> findByAddress(String name);

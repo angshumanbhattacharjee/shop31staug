@@ -22,19 +22,23 @@ public class UserController {
 	private UserService service;
 	
 	
-	@RequestMapping("/find")
-	public User findone(@RequestParam String name) {
-		 return service.findByFirstName(name);
-		
-	}
-	
 	@RequestMapping(value="/signup", method = RequestMethod.POST)
 	public ModelAndView create(Model model, @ModelAttribute("user") User user, @ModelAttribute("fname")String name, @ModelAttribute("password1")String password, @ModelAttribute("phone")String phone, @ModelAttribute("email")String email, @ModelAttribute("address")String address) {
-		User user1= service.create(name, password, phone, email, address);
-		ModelAndView mav = new ModelAndView(); 
-		mav.addObject("users", user1);
-		mav.setViewName("success");
-		return mav;
+		if((service.findByEmail(email) == null) || (service.findByPhone(phone) == null)) {
+			User user1= service.create(name, password, phone, email, address);
+			ModelAndView mav = new ModelAndView(); 
+			mav.addObject("users", user1);
+			mav.setViewName("success");
+			return mav;
+		}
+		else {
+			System.out.println("vvv");
+			ModelAndView mav = new ModelAndView(); 
+			model.addAttribute("msg", "Email id or phone number already exist");
+			mav.setViewName("signup");
+			return mav;
+		}
+		
 	}
 	
 	

@@ -21,92 +21,53 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--//fonts-->	
 <body>	
 		<!-- Navigation -->
-		<div class="agiletopbar">
-			<div class="wthreenavigation">
-				<div class="menu-wrap">
-				<nav class="menu">
-					<div class="icon-list">
-						
-						<a href="electronics-appliances"><i class="fa fa-fw fa-laptop"></i><span>Electronics and appliances</span></a>
-						<a href="cars"><i class="fa fa-fw fa-car"></i><span>Cars</span></a>
-						<a href="furnitures"><i class="fa fa-fw fa-wheelchair"></i><span>Furnitures</span></a>
-						<a href="books"><i class="fa fa-book"></i><span>Books</span></a>
-						</div>
-				</nav>
-				<button class="close-button" id="close-button">Close Menu</button>
-			</div>
-			<button class="menu-button" id="open-button"> </button>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-		<!-- //Navigation -->
-	<!-- header -->
-	<header>
-		<div class="w3ls-header"><!--header-one--> 
-			<!--<div class="w3ls-header-left">
-				<p><a href="mobileapp"><i class="fa fa-download" aria-hidden="true"></i>Download Mobile App </a></p>
-			</div>-->
-			<div class="w3ls-header-right">
-				<ul>
-					<li class="dropdown head-dpdn">
-						<a href="signin" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> Sign In</a>
-					</li>
-					
-					
-					<li class="dropdown head-dpdn">
-						<div class="header-right">	
-						
-	<!-- Large modal -->
-	<div class="agile-its-selectregion">
-				<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-				<li class="dropdown head-dpdn">
-						<a href="signup" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> Sign Up</a>
-					</li>
-
-				
-					<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
-					aria-hidden="true">
-											<div class="modal-dialog modal-lg">
-							<div class="modal-content">
-								<div class="modal-header">
-			
-								
-							</div>
-						</div>
-					</div>
-			</div>
-		</div>
-					</li>
-				</ul>
-			</div>
-			
-			<div class="clearfix"> </div> 
-		</div>
-		<div class="container">
-			<div class="agile-its-header">
-				<div class="logo">
-					<h1><a href="index"><span>OLX</span></a></h1>
-				</div>
-				<div class="agileits_search">
-					<form action="#" method="post">
-						<input name="Search" type="text" placeholder="Search Product" required="" />
-						<select id="agileinfo_search" name="agileinfo_search" required="">
-							<option value="">All Categories</option>
-							
-							<option value="Electronics & Appliances">Electronics & Appliances</option>
-							<option value="Cars">Cars</option>
-							
-							<option value="Furnitures">Furnitures</option>
-							
-						</select>
-						<button type="submit" class="btn btn-default" aria-label="Left Align">
-							<i class="fa fa-search" aria-hidden="true"> </i>
-						</button>
-					</form>
-				<a class="post-w3layouts-ad" href="post-ad">Post Free Ad</a>
-				</div>	
-				<div class="clearfix"></div>
-			</div>
-		</div>
-	</header>
+		<jsp:include page="header.jsp"/>
 	<!-- //header -->	<!-- Slider -->
+
+		<div class="faq main-grid-border">
+		<div class="container">
+			<h2 class="w3-head">Faq's</h2>
+			<dl class="faq-list">
+				<dt class="faq-list_h">
+				<h4 class="marker">Q?</h4>
+				<h5 class="marker_head">HOW CAN I CHANGE MY SHIPPING ADDRESS?</h5>
+				</dt>
+				<dd>
+				<h4 class="marker1">A.</h4>
+				<p class="m_13">By default, the last used shipping address will be saved into to your Sample Store account. When you are checking out your order, the default shipping address will be displayed and you have the option to amend it if you need to.</p>
+
+
+				</dd>
+				<dt class="faq-list_h">
+				<h4 class="marker">Q?</h4>
+				<h5 class="marker_head">HOW DO I ACTIVATE MY ACCOUNT?</h5>
+				</dt>
+				<dd>
+				<h4 class="marker">A.</h4>
+				<p class="m_13">The instructions to activate your account will be sent to your email once you have submitted the registration form. If you did not receive this email, your email service provider’s mailing software may be blocking it. You can try checking your junk / spam folder or contact us at help@samplestore.com</p>
+				</dd>
+				<dt class="faq-list_h">
+				<h4 class="marker">Q?</h4>
+				<h5 class="marker_head">WHAT DO YOU MEAN BY POINTS? HOW DO I EARN IT?</h5>
+				</dt>
+				<dd>
+				<h4 class="marker">A.</h4>
+				<p class="m_13">Because you are important to us, we want to know what you think about the products. As an added value, every time you rate the products you earn points which go straight to your account. 1 point are added to your account for every review that you give. You will need those points in order to redeem the sample products. So keep rating the products to keep earning points!.</p>
+				</dd>
+				<dt class="faq-list_h">
+				<h4 class="marker">Q?</h4>
+				<h5 class="marker_head">HOW CAN I TRACK MY ORDERS & PAYMENT?</h5>
+				</dt>
+				<dd>
+				<h4 class="marker">A.</h4>
+				<p class="m_13">After logging into your account, the status of your checkout history can be found under Order History. For orders via registered postage, a tracking number (article tracking number) will be given to you after the receipt given from Singapore Post Limited (SingPost).</p>
+				</dd>
+				
+          </dl>
+
+		</div>	
+	</div>
+	
+	<jsp:include page="footer.jsp"/>
+	
+	</html>

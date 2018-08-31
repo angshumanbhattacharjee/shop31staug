@@ -21,136 +21,82 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--//fonts-->	
 <body>	
 		<!-- Navigation -->
-		<div class="agiletopbar">
-			<div class="wthreenavigation">
-				<div class="menu-wrap">
-				<nav class="menu">
-					<div class="icon-list">
-						
-						<a href="electronics-appliances"><i class="fa fa-fw fa-laptop"></i><span>Electronics and appliances</span></a>
-						<a href="cars"><i class="fa fa-fw fa-car"></i><span>Cars</span></a>
-						<a href="furnitures"><i class="fa fa-fw fa-wheelchair"></i><span>Furnitures</span></a>
-						<a href="books"><i class="fa fa-book"></i><span>Books</span></a>
-						</div>
-				</nav>
-				<button class="close-button" id="close-button">Close Menu</button>
-			</div>
-			<button class="menu-button" id="open-button"> </button>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-		<!-- //Navigation -->
-	<!-- header -->
-	<header>
-		<div class="w3ls-header"><!--header-one--> 
-			<!--<div class="w3ls-header-left">
-				<p><a href="mobileapp"><i class="fa fa-download" aria-hidden="true"></i>Download Mobile App </a></p>
-			</div>-->
-			<div class="w3ls-header-right">
-				<ul>
-					<li class="dropdown head-dpdn">
-						<a href="signin" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> Sign In</a>
-					</li>
-					
-					
-					<li class="dropdown head-dpdn">
-						<div class="header-right">	
-						
-	<!-- Large modal -->
-	<div class="agile-its-selectregion">
-				<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-				<li class="dropdown head-dpdn">
-						<a href="signup" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> Sign Up</a>
-					</li>
-
-				
-					<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
-					aria-hidden="true">
-											<div class="modal-dialog modal-lg">
-							<div class="modal-content">
-								<div class="modal-header">
-			
-								
-							</div>
-						</div>
-					</div>
-			</div>
-		</div>
-					</li>
-				</ul>
-			</div>
-			
-			<div class="clearfix"> </div> 
-		</div>
-		<div class="container">
-			<div class="agile-its-header">
-				<div class="logo">
-					<h1><a href="index"><span>OLX</span></a></h1>
-				</div>
-				<div class="agileits_search">
-					<form action="dummy" method="post">
-					
-						<input name="Search" type="text" placeholder="Search Product" required="" />
-						
-						<input type="submit" class="btn btn-default" value="Search" aria-label="Left Align">
-							<i class="fa fa-search" aria-hidden="true"> </i>
-						
-					</form>
-				<a class="post-w3layouts-ad" href="post-ad">Post Free Ad</a>
-				</div>		
-				<div class="clearfix"></div>
-			</div>
-		</div>
-	</header>
+		<jsp:include page="header.jsp"/>
 	<!-- //header -->	<!-- Slider -->
-			
+
 <body>
 
-Terms Of Use
-THESE TERMS OF USE WERE UPDATED ON 13 SEPTEMBER 2018
-
-PLEASE CAREFULLY READ THESE TERMS OF USE. 
-BY USING THIS PLATFORM YOU INDICATE YOUR UNDERSTANDING AND ACCEPTANCE OF THESE TERMS. IF YOU DO NOT AGREE TO THESE TERMS YOU MAY NOT USE THE PLATFORM.
-
-
-		<!--footer section start-->		
-<footer>
-			<div class="agileits-footer-bottom text-center">
-			<div class="container">
-				<div class="w3-footer-logo">
-					<h1><a href="index">OLX</a></h1>
-				</div>
-				<div class="col-md-3 wthree-footer-grid">
-							<h4 class="footer-head">Help</h4>
-							<ul>
-								<li><a href="aboutus"><i class="fa fa-long-arrow-right"></i>About Us</a></li>						
-								
-								<li><a href="contactus"><i class="fa fa-long-arrow-right"></i>Contact Us </a></li>
-								<li><a href="usefullinks"><i class="fa fa-long-arrow-right"></i>Useful Links</a></li>
-								<li><a href="termsconditions"><i class="fa fa-long-arrow-right"></i>Terms and conditions</a></li>
-								<!-- <li><a href="contact"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Contact</a></li>
-								<li><a href="typography"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Short codes</a></li>
-								<li><a href="icons"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Icons Page</a></li> -->
-							</ul>
-						</div>
-				<div class="w3-footer-social-icons">
-					<ul>
-						<li><a class="facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a></li>
-						<li><a class="twitter" href="#"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a></li>
-						<li><a class="flickr" href="#"><i class="fa fa-flickr" aria-hidden="true"></i><span>Flickr</span></a></li>
-						<!-- <li><a class="googleplus" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i><span>Google+</span></a></li>
-						<li><a class="dribbble" href="#"><i class="fa fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a></li> -->
-					</ul>
-				</div>
-				<div class="copyrights">
-					<p> © 2018 OLX All Rights Reserved ></p>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		</footer>
-        <!--footer section end-->
+<!--<style>
+div.a {
+    text-align: center;
+	<div class="a">
+<h3>text-align: center:</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+</div>
+</style>--><p>
 
 
+<style> 
+#main {
+	margin:20px;
+    width: 90%;
+    height: 600px;
+    border: 1px solid #c3c3c3;
+    display: -webkit-flex; /* Safari */
+    -webkit-justify-content: center; /* Safari 6.1+ */
+    display: flex;
+    justify-content: center;
+}
+
+#main div {
+    width: 700px;
+    height: 590px;
+}
+</style>
+</head>
+<body><center>
+<h2>Terms and Conditions</h2></center>
+
+
+
+<center><div id="main">
+ 
+  <div style="background-color:lightblue;"><p></br>
+<div align ="left">
+<h3>Introduction</h3></br>
+<h4>These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Webiste Name accessible at Website.com.</br>
+
+These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions.</br>
+
+Minors or people below 18 years old are not allowed to use this Website.</h4></br>
+
+<h3>Intellectual Property Rights</h3></br>
+<h4>Other than the content you own, under these Terms, Company Name and/or its licensors own all the intellectual property rights and materials contained in this Website.
+
+You are granted limited license only for purposes of viewing the material contained on this Website.</h4></br>
+<h3>Limitation of liability</h3></br>
+<h4>In no event shall Company Name, nor any of its officers, directors and employees, shall be held liable for anything arising out of or in any way connected with your use of this Website whether such liability is under contract.  Company Name, including its officers, directors and employees shall not be held liable for any indirect, consequential or special liability arising out of or in any way related to your use of this Website.</h4></br>
+
+
+
+</br>
+</div>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+ 
+</div>
+</center>
+
+
+<jsp:include page="footer.jsp"/>
 </body>
 </html>
+
+
+
