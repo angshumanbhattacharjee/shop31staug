@@ -32,7 +32,7 @@ public class SignInController {
 //	}
 
 	@RequestMapping(value="/signin", method = RequestMethod.POST)
-	public ModelAndView validate(Model model, @ModelAttribute("user") User user) {
+	public ModelAndView validate(Model model, @ModelAttribute("user") User user, @ModelAttribute("name") String name, @ModelAttribute("password") String password ) {
 //		if (user != null && user.getName() != null & user.getPassword() != null) {
 //			if (user.getName().equals("chandra") && user.getPassword().equals("chandra123")) {
 //				model.addAttribute("msg", user.getName());
@@ -48,7 +48,7 @@ public class SignInController {
 		if(service.findByNameAndPassword(user.getName(), user.getPassword()) != null) {
 			ModelAndView mav = new ModelAndView(); 
 			mav.addObject("users", user);
-			mav.setViewName("success");
+			mav.setViewName("index");
 			return mav;
 		}
 		else {

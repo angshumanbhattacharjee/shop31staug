@@ -159,9 +159,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div id="agileits-sign-in-page" class="sign-in-wrapper">
 			<div class="agileinfo_signin">
 			<h3>Sign In</h3>
-				<form action="#" method="post">
-					<input type="email" name="Your Email" placeholder="Enter Email" required> 
-					<input type="password" name="Password" placeholder="Enter Password" required> 
+				<form action="signin" method="post">
+					<!-- <input type="email" name="Your Email" placeholder="Enter Email" required>  -->
+					<input type="text" name="name" placeholder="Enter Username" required> 
+					<input type="password" name="password" placeholder="Enter Password" required> 
 					<input type="submit" value="Sign In">
 					<div class="forgot-grid">
 					
@@ -178,9 +179,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<button type="button" class="close" data-dismiss="modal">&times;</button>
 										<h3 class="w3ls-password">Get Password</h3>		
 										<p class="get-pw">Enter your email address below and we'll send you an email with instructions.</p>
-										<form action="#" method="post">
-											<input type="text" class="user" name="email" placeholder="Email" required="">
-											<input type="submit" value="Submit">
+										
 										</form>
 									</div>
 								</div>

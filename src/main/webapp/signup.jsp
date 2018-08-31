@@ -180,10 +180,11 @@ password2.onchange = validatePassword;
 		<div id="agileits-sign-in-page" class="sign-in-wrapper">
 			<div class="agileinfo_signin">
 			<h3>Sign Up</h3>
-				<form action="#" method="post">
+				<form action="/signup" method="post">
 					<input type="text" name="fname" placeholder="Your Name" required> 
 					<input type="email" name="email" placeholder="Your Email" required> 
 					<input type="tel" name="phone" placeholder="Mobile" pattern="[7|8|9][0-9]{9}"required> 
+					<input type="text" name="address" placeholder="Address" required>
 					<input type="password" name="password1" id="password1" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z|0-9])(?=.*[A-Z]).{8,}"required> 
 					<input type="password" name="password2" id="password2"placeholder="Confirm Password" required> 
 					<div class="signin-rit">

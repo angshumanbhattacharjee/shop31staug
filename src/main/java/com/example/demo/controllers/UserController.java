@@ -29,7 +29,7 @@ public class UserController {
 	}
 	
 	@RequestMapping(value="/signup", method = RequestMethod.POST)
-	public ModelAndView create(Model model, @ModelAttribute("user") User user, @ModelAttribute("fname")String name, @ModelAttribute("password")String password, @ModelAttribute("phone")String phone, @ModelAttribute("email")String email, @ModelAttribute("address")String address) {
+	public ModelAndView create(Model model, @ModelAttribute("user") User user, @ModelAttribute("fname")String name, @ModelAttribute("password1")String password, @ModelAttribute("phone")String phone, @ModelAttribute("email")String email, @ModelAttribute("address")String address) {
 		User user1= service.create(name, password, phone, email, address);
 		ModelAndView mav = new ModelAndView(); 
 		mav.addObject("users", user1);
